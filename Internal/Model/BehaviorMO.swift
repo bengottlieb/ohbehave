@@ -7,10 +7,13 @@
 
 import CoreData
 import Cirrus
+import CloudKit
 
 
 public class BehaviorMO: SyncedManagedObject {
 	@NSManaged public var uuid: String
 	@NSManaged public var title: String
 	@NSManaged public var points: Int32
+
+	override public var database: CKDatabase { .public }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Behavior" representedClassName="Behavior" syncable="YES" codeGenerationType="class">
+    <entity name="Behavior" representedClassName=".Behavior" syncable="YES">
         <attribute name="cirrus_modifedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="cirrus_status" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="frequencyString" optional="YES" attributeType="String"/>
@@ -8,24 +8,24 @@
         <attribute name="title" attributeType="String" defaultValueString=""/>
         <attribute name="uuid" attributeType="String" defaultValueString=""/>
     </entity>
-    <entity name="Child" representedClassName=".ChildMO" syncable="YES">
+    <entity name="Day" representedClassName=".DayMO" syncable="YES">
+        <attribute name="behaviorData" optional="YES" attributeType="Binary"/>
+        <attribute name="cirrus_modifedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="cirrus_status" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" attributeType="Date" defaultDateTimeInterval="661900200" usesScalarValueType="NO"/>
+        <attribute name="uuid" attributeType="String" defaultValueString=""/>
+        <relationship name="patient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patient" inverseName="days" inverseEntity="Patient"/>
+    </entity>
+    <entity name="Patient" representedClassName=".PatientMO" syncable="YES">
         <attribute name="age" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="cirrus_modifedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="cirrus_status" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String" defaultValueString=""/>
         <attribute name="uuid" attributeType="String" defaultValueString=""/>
-        <relationship name="days" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Day" inverseName="child" inverseEntity="Day"/>
-    </entity>
-    <entity name="Day" representedClassName="Day" syncable="YES" codeGenerationType="class">
-        <attribute name="behaviorData" optional="YES" attributeType="Binary"/>
-        <attribute name="cirrus_modifedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="cirrus_status" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="uuid" attributeType="String" defaultValueString=""/>
-        <relationship name="child" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Child" inverseName="days" inverseEntity="Child"/>
+        <relationship name="days" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Day" inverseName="patient" inverseEntity="Day"/>
     </entity>
     <elements>
-        <element name="Child" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="Patient" positionX="-63" positionY="-18" width="128" height="119"/>
         <element name="Day" positionX="-54" positionY="9" width="128" height="119"/>
         <element name="Behavior" positionX="-36" positionY="18" width="128" height="119"/>
     </elements>

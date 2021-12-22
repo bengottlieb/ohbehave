@@ -13,14 +13,13 @@ struct OhBehaveApp: App {
 	//@UIApplicationDelegateAdaptor(LegacyAppDelegate.self) var appDelegate
 	
 	init() {
-		Task {
-			await DataStore.instance.setup()
-		}
+		DataStore.instance.setup()
 	}
 	
 	var body: some Scene {
 		WindowGroup {
 			ContentScreen()
+				.environment(\.managedObjectContext, DataStore.instance.viewContext)
 		}
 	}
 }

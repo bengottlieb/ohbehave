@@ -11,7 +11,7 @@ import Cirrus
 struct ContentScreen: View {
     var body: some View {
 		 CirrusStatusView() {
-			 Text("Welcome to Oh, Behave!")
+			 PatientListScreen()
 		 }
     }
 }

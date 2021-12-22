@@ -12,9 +12,11 @@ import CoreData
 public class DataStore: ObservableObject {
 	public static let instance = DataStore()
 	
-	var configuration = Cirrus.Configuration(identifier: "iCloud.com.standalone.ohbehave", zones: ["kids"])
+	var configuration = Cirrus.Configuration(identifier: "iCloud.com.standalone.ohbehave", zones: ["patients"])
 
-	public func setup() async {
+	public var viewContext: NSManagedObjectContext { SyncedContainer.instance.viewContext }
+	
+	public func setup() {
 		let modelURL = Bundle(for: DataStore.self).url(forResource: "OhBehave", withExtension: "momd")
 		let model = NSManagedObjectModel(contentsOf: modelURL!)
 		SyncedContainer.setup(name: "OhBehave", managedObjectModel: model)
@@ -22,14 +24,15 @@ public class DataStore: ObservableObject {
 		configuration.idField = "uuid"
 		configuration.synchronizer = SimpleObjectSynchronizer(context: context)
 		configuration.entities = [
-			SimpleManagedObject(recordType: "child", entityName: "Child", in: context),
+			SimpleManagedObject(recordType: "patient", entityName: "Patient", in: context),
 			SimpleManagedObject(recordType: "behavior", entityName: "Behavior", in: context),
-			SimpleManagedObject(recordType: "day", entityName: "Day", parent: "child", in: context),
+			SimpleManagedObject(recordType: "day", entityName: "Day", parent: "patient", in: context),
 		]
-		
-		await Cirrus.configure(with: configuration)
 		Logger.instance.level = .verbose
-		await Cirrus.instance.container.privateCloudDatabase.setupSubscriptions([.init()])
 
+		Task {
+			await Cirrus.configure(with: configuration)
+			await Cirrus.instance.container.privateCloudDatabase.setupSubscriptions([.init()])
+		}
 	}
 }
