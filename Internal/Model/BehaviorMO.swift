@@ -49,6 +49,7 @@ extension BehaviorMO {
 		kindsString = behavior.kinds.joined(separator: ",")
 		pointsValue = Int32(behavior.value)
 		unitString = behavior.unit
+		desc = behavior.description
 		earnedIfCompletedAtString = behavior.earnedIfCompletedAt.stringValue
 		earnedUnlessLost = behavior.earnedUnlessLost ?? false
 	}
