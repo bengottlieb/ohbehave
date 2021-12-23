@@ -1,0 +1,266 @@
+[{
+			"kinds": ["hygiene"],
+			"times": ["morning"],
+			"title": "Greet family members",
+			"description": "Greet every family member with an appropriate greeting in the appropriate language before they greet you. Only counts if noticed by mom or dad.",
+			"value": 1,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["hygiene"],
+			"times": ["morning", "evening"],
+			"title": "Brush teeth",
+			"value": 1,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["hygiene"],
+			"times": ["morning"],
+			"title": "Brush hair",
+			"value": 1,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["vision"],
+			"times": ["morning"],
+			"title": "Vision Therapy",
+			"value": 1,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["hygiene", "hair"],
+			"times": ["all day"],
+			"title": "Wear head covering all day",
+			"description": "Without needing reminders",
+			"value": 1,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["hygiene", "hair"],
+			"times": ["morning"],
+			"title": "Put on and calibrate devices",
+			"value": 1,
+			"unit": "screen time"
+		},
+
+
+		{
+			"kinds": ["study"],
+			"times": [],
+			"title": "Read one chapter of chemistry",
+			"description": "Take notes and chapter questions",
+			"value": 30,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["study"],
+			"times": [],
+			"title": "Read one chapter of history",
+			"description": "Take notes and chapter questions",
+			"value": 30,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["study"],
+			"times": [],
+			"title": "One AMC test",
+			"value": 30,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["study"],
+			"times": [],
+			"title": "One AMC chapter",
+			"value": 30,
+			"unit": "screen time"
+		},
+
+
+		{
+			"kinds": ["exercise"],
+			"times": [],
+			"title": "10,000 Steps",
+			"value": 10,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["exercise"],
+			"times": [],
+			"title": "Close rings",
+			"value": 10,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["exercise"],
+			"times": [],
+			"title": "Physical therapy",
+			"value": 10,
+			"unit": "screen time"
+		},
+
+
+		{
+			"kinds": ["chores"],
+			"times": [],
+			"title": "Fill dishwasher",
+			"description": "After cooking",
+			"value": 5,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["chores"],
+			"times": [],
+			"title": "Empty dishwasher",
+			"value": 5,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["chores"],
+			"times": [],
+			"title": "Do laundry",
+			"description": "Limited to once a day, can’t be done while someone is sleeping and doesn’t count if you didn’t move your own things through the 2 stations and out the machines before someone had to tell you to because it’s been left in there and someone else needs to use this. Includes proper folding and putting away in an organized fashion with same items in the same drawer, getting rid of your own dryer sheet and dryer lint, leaving washing machine open",
+			"value": 5,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["chores"],
+			"times": [],
+			"title": "Clean up dishes",
+			"description": "Clean up your own dishes and dirty napkin, trash, after each meal, push your chair in, wash hands. If anyone has to remind you about any of these tasks, no reward.",
+			"value": 5,
+			"unit": "screen time"
+		},
+
+
+		{
+			"kinds": ["behavior"],
+			"times": [],
+			"title": "Don't irritate siblings",
+			"description": "Don’t poke the bear. Don’t do or say things that irritate others. If you accidentally break, hurt, etc anything, say that you are sorry.",
+			"earnedIfCompletedAt": {
+				"hour": 18,
+				"minute": 30,
+				"second": 0
+			},
+			"value": 5,
+			"unit": "screen time",
+			"earnedUnlessLost": true
+		},
+		{
+			"kinds": ["behavior"],
+			"times": [],
+			"title": "Positive Affect",
+			"description": "When around other people outside family, have a pleasant or neutral facial expression. Pouting, looking sad, miserable, huffing, any sort of tantrum behavior to get sympathy or attention from people from outside immediate family means that you didn’t earn extra time.",
+			"earnedIfCompletedAt": {
+				"hour": 18,
+				"minute": 30,
+				"second": 0
+
+			},
+			"value": 5,
+			"unit": "screen time",
+			"earnedUnlessLost": true
+		},
+		{
+			"kinds": ["behavior"],
+			"times": [],
+			"title": "Hand and Limb discipline",
+			"description": "No touching head at meal times/resting head on hand, stroking hair, sniffing fingers or rubbing lips, nose with fingers during reading.",
+			"earnedIfCompletedAt": {
+				"hour": 18,
+				"minute": 30,
+				"second": 0
+
+			},
+			"value": 5,
+			"unit": "screen time",
+			"earnedUnlessLost": true
+		},
+		{
+			"kinds": ["behavior"],
+			"times": [],
+			"title": "No playing parents off each other",
+			"description": "Not complaining to one parent about another to try to get an override or sympathy or attention.",
+			"earnedIfCompletedAt": {
+				"hour": 18,
+				"minute": 30,
+				"second": 0
+
+			},
+			"value": 5,
+			"unit": "screen time",
+			"earnedUnlessLost": true
+		},
+		{
+			"kinds": ["behavior"],
+			"times": [],
+			"title": "No negative food comments",
+			"description": "Mealtime: say no negative thing about any food item, or serving, or temperature, or foods touching.",
+			"earnedIfCompletedAt": {
+				"hour": 18,
+				"minute": 30,
+				"second": 0
+
+			},
+			"value": 5,
+			"unit": "screen time",
+			"earnedUnlessLost": true
+		},
+		{
+			"kinds": ["behavior"],
+			"times": [],
+			"title": "No stimming during the day",
+			"description": "Not stimming the entire day outside of the stimming time. You may add official extra daily stimming periods in the morning and afternoon but they must be set ahead of time and done daily to reduce idle time spent on stimming outside of set times.",
+			"earnedIfCompletedAt": {
+				"hour": 18,
+				"minute": 30,
+				"second": 0
+
+			},
+			"value": 5,
+			"unit": "screen time",
+			"earnedUnlessLost": true
+		},
+
+		{
+			"kinds": ["hair"],
+			"times": ["evening"],
+			"title": "Plug in all devices",
+			"value": 1,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["self care"],
+			"times": ["morning", "evening"],
+			"title": "Meditate",
+			"description": "Meditation where people can see you for 5 minutes, must announce that you are doing it and set a timer",
+			"value": 5,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["self care"],
+			"times": ["morning", "evening"],
+			"title": "Stimming",
+			"description": "Stimming in front of mirror for 2 minutes including making throat clearing sounds or hums, running around in circles, bending over, flicking fingers and turning wrists, toe running, or if sitting sticking out legs at odd angles.",
+			"value": 5,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["self care"],
+			"times": ["evening"],
+			"title": "Stimming cessation",
+			"description": "Stimming cessation with mom for 1 minute to 1 hour if mom has time. You have to ask for this",
+			"value": 5,
+			"unit": "screen time"
+		},
+		{
+			"kinds": ["self care"],
+			"times": ["evening"],
+			"title": "Go to sleep",
+			"description": "Go to sleep at set time without any complaint delay or argument with lights out and in bed. Do not get up. Do not read when awake at night, simply lie there and try to sleep, no matter how long this takes. Use guided meditation or relaxation.",
+			"value": 15,
+			"unit": "screen time"
+		}
+
+	]
+

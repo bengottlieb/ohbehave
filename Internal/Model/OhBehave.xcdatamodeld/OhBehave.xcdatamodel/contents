@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Behavior" representedClassName=".Behavior" syncable="YES">
+    <entity name="Behavior" representedClassName=".BehaviorMO" syncable="YES">
         <attribute name="cirrus_modifedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="cirrus_status" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="earnedIfCompletedAtString" optional="YES" attributeType="String"/>
+        <attribute name="earnedUnlessLost" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="frequencyString" optional="YES" attributeType="String"/>
+        <attribute name="kindsString" optional="YES" attributeType="String"/>
         <attribute name="pointsValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="stringID" attributeType="String" defaultValueString=""/>
+        <attribute name="timesString" optional="YES" attributeType="String"/>
         <attribute name="title" attributeType="String" defaultValueString=""/>
+        <attribute name="unitString" optional="YES" attributeType="String"/>
         <attribute name="uuid" attributeType="String" defaultValueString=""/>
     </entity>
     <entity name="Day" representedClassName=".DayMO" syncable="YES">
@@ -27,6 +34,6 @@
     <elements>
         <element name="Patient" positionX="-63" positionY="-18" width="128" height="119"/>
         <element name="Day" positionX="-54" positionY="9" width="128" height="119"/>
-        <element name="Behavior" positionX="-36" positionY="18" width="128" height="119"/>
+        <element name="Behavior" positionX="-36" positionY="18" width="128" height="224"/>
     </elements>
 </model>

@@ -11,11 +11,24 @@ import Internal
 struct PatientDayScreen: View {
 	@ObservedObject var day: DayMO
 	
+	@State var addingBehavior = false
+	
 	var body: some View {
 		VStack() {
 			
 		}
 		.navigationTitle(day.dayTitle)
+		.toolbar {
+			ToolbarItem(placement: .navigationBarTrailing) {
+				Button(action: addBehavior) { Image(.plus).padding() }
+			}
+		}
+		
+		NavigationLink(destination: AddBehaviorScreen(day: day), isActive: $addingBehavior) { EmptyView() }
+	}
+	
+	func addBehavior() {
+		addingBehavior.toggle()
 	}
 }
 

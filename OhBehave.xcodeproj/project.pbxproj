@@ -26,6 +26,11 @@
 		B5DB284C27739B58007C8186 /* PatientListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB284B27739B58007C8186 /* PatientListTable.swift */; };
 		B5DB284E2773B595007C8186 /* PatientDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB284D2773B595007C8186 /* PatientDetailsScreen.swift */; };
 		B5DB28502773B61E007C8186 /* PatientDayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB284F2773B61E007C8186 /* PatientDayScreen.swift */; };
+		B5DB28522773E151007C8186 /* BehaviorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28512773E151007C8186 /* BehaviorInfo.swift */; };
+		B5DB28562773F104007C8186 /* BehaviorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28552773F103007C8186 /* BehaviorListView.swift */; };
+		B5DB28582773F796007C8186 /* NSManagedObjectContext+Behave.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28572773F796007C8186 /* NSManagedObjectContext+Behave.swift */; };
+		B5DB285A2773FB46007C8186 /* AddBehaviorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28592773FB46007C8186 /* AddBehaviorScreen.swift */; };
+		B5DB285B2773FE8D007C8186 /* default_behaviors.json in Resources */ = {isa = PBXBuildFile; fileRef = B5DB28532773E1B5007C8186 /* default_behaviors.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +77,11 @@
 		B5DB284B27739B58007C8186 /* PatientListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListTable.swift; sourceTree = "<group>"; };
 		B5DB284D2773B595007C8186 /* PatientDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDetailsScreen.swift; sourceTree = "<group>"; };
 		B5DB284F2773B61E007C8186 /* PatientDayScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDayScreen.swift; sourceTree = "<group>"; };
+		B5DB28512773E151007C8186 /* BehaviorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorInfo.swift; sourceTree = "<group>"; };
+		B5DB28532773E1B5007C8186 /* default_behaviors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default_behaviors.json; sourceTree = "<group>"; };
+		B5DB28552773F103007C8186 /* BehaviorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorListView.swift; sourceTree = "<group>"; };
+		B5DB28572773F796007C8186 /* NSManagedObjectContext+Behave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Behave.swift"; sourceTree = "<group>"; };
+		B5DB28592773FB46007C8186 /* AddBehaviorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBehaviorScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				B5DB281427735E9C007C8186 /* Assets.xcassets */,
+				B5DB28532773E1B5007C8186 /* default_behaviors.json */,
 				B5DB281627735E9C007C8186 /* Preview Content */,
 			);
 			path = Resources;
@@ -169,6 +180,8 @@
 				B5DB284B27739B58007C8186 /* PatientListTable.swift */,
 				B5DB284D2773B595007C8186 /* PatientDetailsScreen.swift */,
 				B5DB284F2773B61E007C8186 /* PatientDayScreen.swift */,
+				B5DB28552773F103007C8186 /* BehaviorListView.swift */,
+				B5DB28592773FB46007C8186 /* AddBehaviorScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -187,8 +200,10 @@
 				B5DB2847277372B1007C8186 /* DataStore.swift */,
 				B5DB28372773602A007C8186 /* PatientMO.swift */,
 				B5DB283D27736446007C8186 /* BehaviorMO.swift */,
+				B5DB28512773E151007C8186 /* BehaviorInfo.swift */,
 				B5DB283F2773645C007C8186 /* DayMO.swift */,
 				B5DB284127736869007C8186 /* OhBehave.xcdatamodeld */,
+				B5DB28572773F796007C8186 /* NSManagedObjectContext+Behave.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -302,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DB285B2773FE8D007C8186 /* default_behaviors.json in Resources */,
 				B5DB281827735E9C007C8186 /* Preview Assets.xcassets in Resources */,
 				B5DB281527735E9C007C8186 /* Assets.xcassets in Resources */,
 			);
@@ -324,7 +340,9 @@
 				B5DB28502773B61E007C8186 /* PatientDayScreen.swift in Sources */,
 				B5DB284A27739A61007C8186 /* PatientListScreen.swift in Sources */,
 				B5DB281327735E9B007C8186 /* ContentScreen.swift in Sources */,
+				B5DB285A2773FB46007C8186 /* AddBehaviorScreen.swift in Sources */,
 				B5DB284E2773B595007C8186 /* PatientDetailsScreen.swift in Sources */,
+				B5DB28562773F104007C8186 /* BehaviorListView.swift in Sources */,
 				B5DB281127735E9B007C8186 /* OhBehaveApp.swift in Sources */,
 				B5DB284C27739B58007C8186 /* PatientListTable.swift in Sources */,
 			);
@@ -336,9 +354,11 @@
 			files = (
 				B5DB28382773602A007C8186 /* PatientMO.swift in Sources */,
 				B5DB283E27736446007C8186 /* BehaviorMO.swift in Sources */,
+				B5DB28582773F796007C8186 /* NSManagedObjectContext+Behave.swift in Sources */,
 				B5DB28402773645C007C8186 /* DayMO.swift in Sources */,
 				B5DB2848277372B1007C8186 /* DataStore.swift in Sources */,
 				B5DB284327736869007C8186 /* OhBehave.xcdatamodeld in Sources */,
+				B5DB28522773E151007C8186 /* BehaviorInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
