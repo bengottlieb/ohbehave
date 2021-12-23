@@ -7,6 +7,8 @@
 
 import Suite
 import Internal
+import Cirrus
+import Journalist
 
 @main
 struct OhBehaveApp: App {
@@ -14,6 +16,13 @@ struct OhBehaveApp: App {
 	
 	init() {
 		DataStore.instance.setup()
+		
+		Task {
+			report {
+				await DataStore.instance.configure()
+				try await SyncedContainer.instance.sync(all: BehaviorMO.self, in: .public)
+			}
+		}
 	}
 	
 	var body: some Scene {

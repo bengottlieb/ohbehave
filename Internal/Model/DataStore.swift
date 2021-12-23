@@ -29,10 +29,11 @@ public class DataStore: ObservableObject {
 			SimpleManagedObject(recordType: "day", entityName: "Day", parent: "patient", in: context),
 		]
 		Logger.instance.level = .verbose
-
-		Task {
-			await Cirrus.configure(with: configuration)
-			await Cirrus.instance.container.privateCloudDatabase.setupSubscriptions([.init()])
-		}
+	}
+	
+	public func configure() async {
+		await Cirrus.configure(with: configuration)
+	//	await try! Cirrus.instance.container.publicCloudDatabase.deleteAll(from: ["behavior"])
+		await Cirrus.instance.container.privateCloudDatabase.setupSubscriptions([.init()])
 	}
 }

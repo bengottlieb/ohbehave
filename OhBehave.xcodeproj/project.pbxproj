@@ -31,6 +31,7 @@
 		B5DB28582773F796007C8186 /* NSManagedObjectContext+Behave.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28572773F796007C8186 /* NSManagedObjectContext+Behave.swift */; };
 		B5DB285A2773FB46007C8186 /* AddBehaviorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28592773FB46007C8186 /* AddBehaviorScreen.swift */; };
 		B5DB285B2773FE8D007C8186 /* default_behaviors.json in Resources */ = {isa = PBXBuildFile; fileRef = B5DB28532773E1B5007C8186 /* default_behaviors.json */; };
+		B5DB285E27741B46007C8186 /* Journalist in Frameworks */ = {isa = PBXBuildFile; productRef = B5DB285D27741B46007C8186 /* Journalist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 			files = (
 				B5DB282927735F32007C8186 /* Internal.framework in Frameworks */,
 				B5DB284627736EA6007C8186 /* CloudKit.framework in Frameworks */,
+				B5DB285E27741B46007C8186 /* Journalist in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +247,9 @@
 				B5DB282827735F32007C8186 /* PBXTargetDependency */,
 			);
 			name = OhBehave;
+			packageProductDependencies = (
+				B5DB285D27741B46007C8186 /* Journalist */,
+			);
 			productName = OhBehave;
 			productReference = B5DB280D27735E9B007C8186 /* OhBehave.app */;
 			productType = "com.apple.product-type.application";
@@ -301,6 +306,7 @@
 			mainGroup = B5DB280427735E9B007C8186;
 			packageReferences = (
 				B5DB282F27735F42007C8186 /* XCRemoteSwiftPackageReference "suite" */,
+				B5DB285C27741B46007C8186 /* XCRemoteSwiftPackageReference "Journalist" */,
 			);
 			productRefGroup = B5DB280E27735E9B007C8186 /* Products */;
 			projectDirPath = "";
@@ -657,6 +663,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		B5DB285C27741B46007C8186 /* XCRemoteSwiftPackageReference "Journalist" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bengottlieb/Journalist";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -668,6 +682,11 @@
 		B5DB283B27736048007C8186 /* Cirrus */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Cirrus;
+		};
+		B5DB285D27741B46007C8186 /* Journalist */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5DB285C27741B46007C8186 /* XCRemoteSwiftPackageReference "Journalist" */;
+			productName = Journalist;
 		};
 /* End XCSwiftPackageProductDependency section */
 

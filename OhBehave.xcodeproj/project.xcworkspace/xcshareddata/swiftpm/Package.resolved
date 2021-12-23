@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Journalist",
+        "repositoryURL": "https://github.com/bengottlieb/Journalist",
+        "state": {
+          "branch": null,
+          "revision": "ff8f559f24c731881be741cf9bef306c18850549",
+          "version": "1.0.1"
+        }
+      },
+      {
         "package": "Suite",
         "repositoryURL": "https://github.com/bengottlieb/suite",
         "state": {
