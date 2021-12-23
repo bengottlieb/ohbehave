@@ -27,12 +27,16 @@
 		B5DB284E2773B595007C8186 /* PatientDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB284D2773B595007C8186 /* PatientDetailsScreen.swift */; };
 		B5DB28502773B61E007C8186 /* PatientDayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB284F2773B61E007C8186 /* PatientDayScreen.swift */; };
 		B5DB28522773E151007C8186 /* BehaviorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28512773E151007C8186 /* BehaviorInfo.swift */; };
-		B5DB28562773F104007C8186 /* BehaviorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28552773F103007C8186 /* BehaviorListView.swift */; };
+		B5DB28562773F104007C8186 /* AddBehaviorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28552773F103007C8186 /* AddBehaviorListView.swift */; };
 		B5DB28582773F796007C8186 /* NSManagedObjectContext+Behave.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28572773F796007C8186 /* NSManagedObjectContext+Behave.swift */; };
 		B5DB285A2773FB46007C8186 /* AddBehaviorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28592773FB46007C8186 /* AddBehaviorScreen.swift */; };
 		B5DB285B2773FE8D007C8186 /* default_behaviors.json in Resources */ = {isa = PBXBuildFile; fileRef = B5DB28532773E1B5007C8186 /* default_behaviors.json */; };
-		B5DB285E27741B46007C8186 /* Journalist in Frameworks */ = {isa = PBXBuildFile; productRef = B5DB285D27741B46007C8186 /* Journalist */; };
 		B5DB286027742423007C8186 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB285F27742423007C8186 /* Settings.swift */; };
+		B5DB28682774FFA6007C8186 /* Journalist in Frameworks */ = {isa = PBXBuildFile; productRef = B5DB28672774FFA6007C8186 /* Journalist */; };
+		B5DB286A2775034B007C8186 /* RecordedBehaviorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28692775034B007C8186 /* RecordedBehaviorListView.swift */; };
+		B5DB286C27750380007C8186 /* DayMO+Behaviors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB286B27750380007C8186 /* DayMO+Behaviors.swift */; };
+		B5DB286F27751D7A007C8186 /* ValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB286E27751D7A007C8186 /* ValueView.swift */; };
+		B5DB287127752535007C8186 /* BehaviorMO+RewardUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB287027752535007C8186 /* BehaviorMO+RewardUnits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,10 +85,15 @@
 		B5DB284F2773B61E007C8186 /* PatientDayScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDayScreen.swift; sourceTree = "<group>"; };
 		B5DB28512773E151007C8186 /* BehaviorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorInfo.swift; sourceTree = "<group>"; };
 		B5DB28532773E1B5007C8186 /* default_behaviors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default_behaviors.json; sourceTree = "<group>"; };
-		B5DB28552773F103007C8186 /* BehaviorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorListView.swift; sourceTree = "<group>"; };
+		B5DB28552773F103007C8186 /* AddBehaviorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBehaviorListView.swift; sourceTree = "<group>"; };
 		B5DB28572773F796007C8186 /* NSManagedObjectContext+Behave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Behave.swift"; sourceTree = "<group>"; };
 		B5DB28592773FB46007C8186 /* AddBehaviorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBehaviorScreen.swift; sourceTree = "<group>"; };
 		B5DB285F27742423007C8186 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B5DB28662774FF4B007C8186 /* Journalist */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Journalist; path = ../../Frameworks/Journalist; sourceTree = "<group>"; };
+		B5DB28692775034B007C8186 /* RecordedBehaviorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordedBehaviorListView.swift; sourceTree = "<group>"; };
+		B5DB286B27750380007C8186 /* DayMO+Behaviors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DayMO+Behaviors.swift"; sourceTree = "<group>"; };
+		B5DB286E27751D7A007C8186 /* ValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueView.swift; sourceTree = "<group>"; };
+		B5DB287027752535007C8186 /* BehaviorMO+RewardUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BehaviorMO+RewardUnits.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +103,6 @@
 			files = (
 				B5DB282927735F32007C8186 /* Internal.framework in Frameworks */,
 				B5DB284627736EA6007C8186 /* CloudKit.framework in Frameworks */,
-				B5DB285E27741B46007C8186 /* Journalist in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +112,7 @@
 			files = (
 				B5DB283C27736048007C8186 /* Cirrus in Frameworks */,
 				B5DB283127735F42007C8186 /* Suite in Frameworks */,
+				B5DB28682774FFA6007C8186 /* Journalist in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +145,7 @@
 				B5DB284427736EA4007C8186 /* OhBehave.entitlements */,
 				B5DB283627735FD9007C8186 /* Types */,
 				B5DB283527735FD4007C8186 /* Screens */,
+				B5DB2872277525E0007C8186 /* Components */,
 				B5DB283427735FC0007C8186 /* Resources */,
 			);
 			path = OhBehave;
@@ -163,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				B5DB283327735FAA007C8186 /* Cirrus */,
+				B5DB28662774FF4B007C8186 /* Journalist */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -185,8 +196,8 @@
 				B5DB284B27739B58007C8186 /* PatientListTable.swift */,
 				B5DB284D2773B595007C8186 /* PatientDetailsScreen.swift */,
 				B5DB284F2773B61E007C8186 /* PatientDayScreen.swift */,
-				B5DB28552773F103007C8186 /* BehaviorListView.swift */,
-				B5DB28592773FB46007C8186 /* AddBehaviorScreen.swift */,
+				B5DB286D27751132007C8186 /* Add Behavior */,
+				B5DB28692775034B007C8186 /* RecordedBehaviorListView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -207,6 +218,8 @@
 				B5DB283D27736446007C8186 /* BehaviorMO.swift */,
 				B5DB28512773E151007C8186 /* BehaviorInfo.swift */,
 				B5DB283F2773645C007C8186 /* DayMO.swift */,
+				B5DB286B27750380007C8186 /* DayMO+Behaviors.swift */,
+				B5DB287027752535007C8186 /* BehaviorMO+RewardUnits.swift */,
 				B5DB284127736869007C8186 /* OhBehave.xcdatamodeld */,
 				B5DB28572773F796007C8186 /* NSManagedObjectContext+Behave.swift */,
 			);
@@ -219,6 +232,23 @@
 				B5DB284527736EA6007C8186 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5DB286D27751132007C8186 /* Add Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				B5DB28592773FB46007C8186 /* AddBehaviorScreen.swift */,
+				B5DB28552773F103007C8186 /* AddBehaviorListView.swift */,
+			);
+			path = "Add Behavior";
+			sourceTree = "<group>";
+		};
+		B5DB2872277525E0007C8186 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B5DB286E27751D7A007C8186 /* ValueView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +281,6 @@
 			);
 			name = OhBehave;
 			packageProductDependencies = (
-				B5DB285D27741B46007C8186 /* Journalist */,
 			);
 			productName = OhBehave;
 			productReference = B5DB280D27735E9B007C8186 /* OhBehave.app */;
@@ -274,6 +303,7 @@
 			packageProductDependencies = (
 				B5DB283027735F42007C8186 /* Suite */,
 				B5DB283B27736048007C8186 /* Cirrus */,
+				B5DB28672774FFA6007C8186 /* Journalist */,
 			);
 			productName = Internal;
 			productReference = B5DB282327735F32007C8186 /* Internal.framework */;
@@ -309,7 +339,6 @@
 			mainGroup = B5DB280427735E9B007C8186;
 			packageReferences = (
 				B5DB282F27735F42007C8186 /* XCRemoteSwiftPackageReference "suite" */,
-				B5DB285C27741B46007C8186 /* XCRemoteSwiftPackageReference "Journalist" */,
 			);
 			productRefGroup = B5DB280E27735E9B007C8186 /* Products */;
 			projectDirPath = "";
@@ -351,7 +380,9 @@
 				B5DB281327735E9B007C8186 /* ContentScreen.swift in Sources */,
 				B5DB285A2773FB46007C8186 /* AddBehaviorScreen.swift in Sources */,
 				B5DB284E2773B595007C8186 /* PatientDetailsScreen.swift in Sources */,
-				B5DB28562773F104007C8186 /* BehaviorListView.swift in Sources */,
+				B5DB286A2775034B007C8186 /* RecordedBehaviorListView.swift in Sources */,
+				B5DB286F27751D7A007C8186 /* ValueView.swift in Sources */,
+				B5DB28562773F104007C8186 /* AddBehaviorListView.swift in Sources */,
 				B5DB281127735E9B007C8186 /* OhBehaveApp.swift in Sources */,
 				B5DB284C27739B58007C8186 /* PatientListTable.swift in Sources */,
 			);
@@ -363,10 +394,12 @@
 			files = (
 				B5DB28382773602A007C8186 /* PatientMO.swift in Sources */,
 				B5DB283E27736446007C8186 /* BehaviorMO.swift in Sources */,
+				B5DB286C27750380007C8186 /* DayMO+Behaviors.swift in Sources */,
 				B5DB286027742423007C8186 /* Settings.swift in Sources */,
 				B5DB28582773F796007C8186 /* NSManagedObjectContext+Behave.swift in Sources */,
 				B5DB28402773645C007C8186 /* DayMO.swift in Sources */,
 				B5DB2848277372B1007C8186 /* DataStore.swift in Sources */,
+				B5DB287127752535007C8186 /* BehaviorMO+RewardUnits.swift in Sources */,
 				B5DB284327736869007C8186 /* OhBehave.xcdatamodeld in Sources */,
 				B5DB28522773E151007C8186 /* BehaviorInfo.swift in Sources */,
 			);
@@ -667,14 +700,6 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		B5DB285C27741B46007C8186 /* XCRemoteSwiftPackageReference "Journalist" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bengottlieb/Journalist";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -687,9 +712,8 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Cirrus;
 		};
-		B5DB285D27741B46007C8186 /* Journalist */ = {
+		B5DB28672774FFA6007C8186 /* Journalist */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B5DB285C27741B46007C8186 /* XCRemoteSwiftPackageReference "Journalist" */;
 			productName = Journalist;
 		};
 /* End XCSwiftPackageProductDependency section */

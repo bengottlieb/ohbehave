@@ -5,25 +5,39 @@
 //  Created by Ben Gottlieb on 12/22/21.
 //
 
-import SwiftUI
+import Suite
 import Internal
 
 struct PatientDayScreen: View {
 	@ObservedObject var day: DayMO
 	
+	@State var editPatient = false
 	@State var addingBehavior = false
 	
 	var body: some View {
 		VStack() {
-			
+			RecordedBehaviorListView(day: day)
+			HStack() {
+				Text("Total for day")
+				Spacer()
+				Text("\(TimeInterval(day.totalEarned(for: .screenTime) * 60).durationString(style: .minutes))")
+					.bold()
+			}
+			.padding()
 		}
 		.navigationTitle(day.dayTitle)
 		.toolbar {
 			ToolbarItem(placement: .navigationBarTrailing) {
-				Button(action: addBehavior) { Image(.plus).padding() }
+				Button(action: { editPatient.toggle() }) { Image(.gear) }
+			}
+			ToolbarItem(placement: .navigationBarTrailing) {
+				Button(action: addBehavior) { Image(.plus) }
 			}
 		}
 		
+		if let patient = day.patient {
+			NavigationLink(destination: PatientDetailsScreen(patient: patient), isActive: $editPatient) { EmptyView() }
+		}
 		NavigationLink(destination: AddBehaviorScreen(day: day), isActive: $addingBehavior) { EmptyView() }
 	}
 	

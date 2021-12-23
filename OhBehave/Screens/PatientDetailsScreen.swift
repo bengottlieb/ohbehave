@@ -14,10 +14,17 @@ struct PatientDetailsScreen: View {
 		VStack() {
 			TextField("Name", text: $patient.name)
 			
-			Stepper("Age", value: $patient.age)
+			HStack() {
+				Text("Age: \(patient.age)")
+				Stepper("", value: $patient.age)
+			}
 			Spacer()
 		}
+		.padding()
 		.navigationTitle("Details")
+		.onDisappear {
+			patient.save()
+		}
 	}
 }
 

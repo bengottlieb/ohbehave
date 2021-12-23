@@ -16,8 +16,9 @@ struct PatientListTable: View {
 		ScrollView() {
 			VStack() {
 				ForEach(patients) { patient in
-					NavigationLink(destination: Deferred { PatientDayScreen(day: patient.today) }) {
-						Text(patient.name + " - " + patient.uuid)
+					NavigationLink(destination: PatientDayScreen(day: patient.today)) {
+						Text(patient.name)
+							.font(.title)
 					}
 				}
 			}
