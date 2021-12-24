@@ -20,7 +20,7 @@ struct AddBehaviorScreen: View {
 			}
 		}
 		.toolbar {
-			ToolbarItem(placement: .navigationBarLeading) {
+			ToolbarItem(placement: .navigationBarTrailing) {
 				Button(action: { hideAlreadyAddedBehaviors.toggle() }) { Text(hideAlreadyAddedBehaviors ? "Show Added" : "Hide Added" ) }
 			}
 		}

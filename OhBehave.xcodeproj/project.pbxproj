@@ -37,6 +37,8 @@
 		B5DB286C27750380007C8186 /* DayMO+Behaviors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB286B27750380007C8186 /* DayMO+Behaviors.swift */; };
 		B5DB286F27751D7A007C8186 /* ValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB286E27751D7A007C8186 /* ValueView.swift */; };
 		B5DB287127752535007C8186 /* BehaviorMO+RewardUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB287027752535007C8186 /* BehaviorMO+RewardUnits.swift */; };
+		B5DB28772775DB75007C8186 /* Achtung in Frameworks */ = {isa = PBXBuildFile; productRef = B5DB28762775DB75007C8186 /* Achtung */; };
+		B5DB28792775DB99007C8186 /* AddBehaviorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28782775DB99007C8186 /* AddBehaviorRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		B5DB286B27750380007C8186 /* DayMO+Behaviors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DayMO+Behaviors.swift"; sourceTree = "<group>"; };
 		B5DB286E27751D7A007C8186 /* ValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueView.swift; sourceTree = "<group>"; };
 		B5DB287027752535007C8186 /* BehaviorMO+RewardUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BehaviorMO+RewardUnits.swift"; sourceTree = "<group>"; };
+		B5DB28752775DB61007C8186 /* Achtung */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Achtung; path = ../../Frameworks/Achtung; sourceTree = "<group>"; };
+		B5DB28782775DB99007C8186 /* AddBehaviorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBehaviorRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DB28772775DB75007C8186 /* Achtung in Frameworks */,
 				B5DB282927735F32007C8186 /* Internal.framework in Frameworks */,
 				B5DB284627736EA6007C8186 /* CloudKit.framework in Frameworks */,
 			);
@@ -174,6 +179,7 @@
 			children = (
 				B5DB283327735FAA007C8186 /* Cirrus */,
 				B5DB28662774FF4B007C8186 /* Journalist */,
+				B5DB28752775DB61007C8186 /* Achtung */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 			children = (
 				B5DB28592773FB46007C8186 /* AddBehaviorScreen.swift */,
 				B5DB28552773F103007C8186 /* AddBehaviorListView.swift */,
+				B5DB28782775DB99007C8186 /* AddBehaviorRow.swift */,
 			);
 			path = "Add Behavior";
 			sourceTree = "<group>";
@@ -281,6 +288,7 @@
 			);
 			name = OhBehave;
 			packageProductDependencies = (
+				B5DB28762775DB75007C8186 /* Achtung */,
 			);
 			productName = OhBehave;
 			productReference = B5DB280D27735E9B007C8186 /* OhBehave.app */;
@@ -378,6 +386,7 @@
 				B5DB28502773B61E007C8186 /* PatientDayScreen.swift in Sources */,
 				B5DB284A27739A61007C8186 /* PatientListScreen.swift in Sources */,
 				B5DB281327735E9B007C8186 /* ContentScreen.swift in Sources */,
+				B5DB28792775DB99007C8186 /* AddBehaviorRow.swift in Sources */,
 				B5DB285A2773FB46007C8186 /* AddBehaviorScreen.swift in Sources */,
 				B5DB284E2773B595007C8186 /* PatientDetailsScreen.swift in Sources */,
 				B5DB286A2775034B007C8186 /* RecordedBehaviorListView.swift in Sources */,
@@ -715,6 +724,10 @@
 		B5DB28672774FFA6007C8186 /* Journalist */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Journalist;
+		};
+		B5DB28762775DB75007C8186 /* Achtung */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Achtung;
 		};
 /* End XCSwiftPackageProductDependency section */
 

@@ -21,6 +21,10 @@ extension DayMO {
 		return nil
 	}
 	
+	public func count(of behavior: BehaviorMO) -> Int {
+		loggedBehaviors.filter { $0.behaviorID == behavior.stringID }.count
+	}
+	
 	public func deleteBehaviors(at indexes: IndexSet) {
 		var behaviors = loggedBehaviors
 		behaviors.remove(atOffsets: indexes)
@@ -48,11 +52,14 @@ extension DayMO {
 		}
 	}
 	
-	public func log(behavior: BehaviorMO) {
+	@discardableResult public func log(behavior: BehaviorMO) -> Bool {
+		if !behavior.earnedMultipleTimes, has(logged: behavior) { return false }
+		
 		var behaviors = self.loggedBehaviors
 		
 		behaviors.append(LoggedBehavior(behaviorID: behavior.stringID))
 		self.loggedBehaviors = behaviors
+		return true
 	}
 	
 	public struct LoggedBehavior: Codable, Identifiable {

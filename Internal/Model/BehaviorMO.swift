@@ -22,6 +22,8 @@ public class BehaviorMO: SyncedManagedObject {
 	@NSManaged public var unitString: String?
 	@NSManaged public var earnedIfCompletedAtString: String?
 	@NSManaged public var earnedUnlessLost: Bool
+	@NSManaged public var earnedMultipleTimes: Bool
+	
 
 	override public var database: CKDatabase { .public }
 	
@@ -29,20 +31,28 @@ public class BehaviorMO: SyncedManagedObject {
 		super.awakeFromInsert()
 		stringID = uuid
 	}
+	
+	public var earnedIfCompletedAt: Date.Time? {
+		try? Date.Time.load(fromString: earnedIfCompletedAtString ?? "")
+	}
 }
 
 extension BehaviorMO {
 	public static func importDefaults(into context: NSManagedObjectContext) {
 		for behavior in BehaviorInfo.defaultBehaviors {
-			if context.behavior(with: behavior.id) != nil { continue }
-			
-			let new: BehaviorMO = context.insertObject()
-			new.load(from: behavior)
+			if let existing = context.behavior(with: behavior.id) {
+				existing.load(from: behavior)
+			} else {
+				let new: BehaviorMO = context.insertObject()
+				new.load(from: behavior)
+			}
 		}
 		context.saveContext()
 	}
 
 	func load(from behavior: BehaviorInfo) {
+		if self.behaviorInfo == behavior { return }
+		
 		stringID = behavior.id
 		title = behavior.title
 		timesString = behavior.times.joined(separator: ",")
@@ -52,5 +62,18 @@ extension BehaviorMO {
 		desc = behavior.description
 		earnedIfCompletedAtString = behavior.earnedIfCompletedAt.stringValue
 		earnedUnlessLost = behavior.earnedUnlessLost ?? false
+		earnedMultipleTimes = behavior.earnedMultipleTimes ?? false
+	}
+	
+	var behaviorInfo: BehaviorInfo {
+		BehaviorInfo(kinds: kindsString?.commaSeparated ?? [], times: timesString?.commaSeparated ?? [], title: title, description: desc, value: Int(pointsValue), unit: unitString ?? "", earnedIfCompletedAt: earnedIfCompletedAt, earnedUnlessLost: earnedUnlessLost, earnedMultipleTimes: earnedMultipleTimes)
+	}
+}
+
+fileprivate extension String {
+	var commaSeparated: [String] {
+		let results = components(separatedBy: ",")
+		if results == [""] { return [] }
+		return results
 	}
 }

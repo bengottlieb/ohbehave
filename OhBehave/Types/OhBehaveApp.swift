@@ -10,6 +10,7 @@ import Internal
 import Cirrus
 import Journalist
 import SwiftUI
+import Achtung
 
 @main
 struct OhBehaveApp: App {
@@ -18,6 +19,7 @@ struct OhBehaveApp: App {
 	
 	init() {
 		DataStore.instance.setup()
+		Achtung.instance.setup()
 		
 		Task {
 			report {
