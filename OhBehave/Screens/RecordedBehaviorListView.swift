@@ -20,11 +20,15 @@ struct RecordedBehaviorListView: View {
 							Text(behavior.title)
 							if let date = log.date {
 								Text(date.localTimeString(date: .none))
+									.font(.caption)
+									.foregroundColor(behavior.earnedUnlessLost ? .red : .black)
 							}
 						}
 						Spacer()
-						ValueView(behavior: behavior)
-							.padding(5)
+						if !behavior.earnedUnlessLost {
+							ValueView(behavior: behavior)
+								.padding(5)
+						}
 					} else {
 						Text("Missing Behavior")
 					}
@@ -35,6 +39,19 @@ struct RecordedBehaviorListView: View {
 				day.deleteBehaviors(at: indexes)
 				day.save()
 			}
+
+			ForEach(day.notYetLost) { behavior in
+				HStack() {
+					VStack(alignment: .leading) {
+						Text(behavior.title)
+					}
+					Spacer()
+					ValueView(behavior: behavior)
+						.padding(5)
+				}
+				.opacity(0.5)
+			}
+
 		}
 		.listStyle(.plain)
 	}

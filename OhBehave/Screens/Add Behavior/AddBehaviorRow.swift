@@ -23,12 +23,20 @@ struct AddBehaviorRow: View {
 		HStack() {
 			Button(action: { selectBehavior(behavior) }) {
 				VStack(alignment: .leading) {
-					Text(behavior.title)
+					HStack() {
+						if behavior.canBeLost {
+							Image(.xmark_circle)
+								.foregroundColor(.red)
+						}
+						Text(behavior.title)
+					}
 					HStack() {
 						if let addedAt = day.logged(behaviorAt: behavior) {
-							Text(addedAt.localTimeString(date: .none))
+							let prefix = behavior.earnedUnlessLost ? "lost at " : "earned at "
+							Text(prefix + addedAt.localTimeString(date: .none))
 								.font(.caption)
 								.opacity(hasBeenEarned ? 1 : 0.5)
+								.foregroundColor(behavior.earnedUnlessLost ? .red : .black)
 						}
 					}
 				}

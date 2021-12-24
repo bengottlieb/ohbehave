@@ -49,6 +49,12 @@ extension BehaviorMO {
 		}
 		context.saveContext()
 	}
+	
+	public var canBeLost: Bool {
+		guard let before = earnedIfCompletedAt else { return false }
+		
+		return before < Date().time
+	}
 
 	func load(from behavior: BehaviorInfo) {
 		if self.behaviorInfo == behavior { return }
