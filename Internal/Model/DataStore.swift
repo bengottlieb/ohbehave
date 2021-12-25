@@ -8,6 +8,7 @@
 import Suite
 import Cirrus
 import CoreData
+import Journalist
 
 public class DataStore: ObservableObject {
 	public static let instance = DataStore()
@@ -29,11 +30,25 @@ public class DataStore: ObservableObject {
 			SimpleManagedObject(recordType: "day", entityName: "Day", parent: "patient", in: context),
 		]
 		Logger.instance.level = .verbose
+		Task { await configure() }
+	}
+	
+	var lastSyncedPredicate: NSPredicate {
+		if let date = Settings.instance.lastSyncedBehaviorsAt {
+			return NSPredicate(format: "modificationDate > %@", date as NSDate)
+		}
+		return NSPredicate(value: true)
 	}
 	
 	public func configure() async {
 		await Cirrus.configure(with: configuration)
 		//try? await Cirrus.instance.container.publicCloudDatabase.deleteAll(from: ["behavior"])
 		await Cirrus.instance.container.privateCloudDatabase.setupSubscriptions([.init()])
+
+		await report {
+			let date = Date()
+			try await SyncedContainer.instance.sync(all: BehaviorMO.self, predicate: self.lastSyncedPredicate, in: .public)
+			Settings.instance.lastSyncedBehaviorsAt = date
+		}
 	}
 }
