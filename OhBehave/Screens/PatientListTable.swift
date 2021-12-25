@@ -7,6 +7,8 @@
 
 import Suite
 import Internal
+import Cirrus
+import CloudKit
 
 struct PatientListTable: View {
 	@Environment(\.managedObjectContext) var context
@@ -17,8 +19,22 @@ struct PatientListTable: View {
 			VStack() {
 				ForEach(patients) { patient in
 					NavigationLink(destination: PatientDayScreen(day: patient.today)) {
-						Text(patient.name)
-							.font(.title)
+						HStack() {
+							Text(patient.name)
+								.font(.title)
+							
+							Spacer()
+							
+							Button(action: {
+								Task {
+									try? await CKRecord(patient)?.share(withTitle: "Sharing access to \(patient.name)", permissions: .readWrite, in: UIApplication.shared.currentScene?.frontWindow)
+								}}) {
+									Image(.square_and_arrow_up)
+										.padding()
+								}
+							
+						}
+						.padding()
 					}
 				}
 			}

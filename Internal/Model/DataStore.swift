@@ -9,6 +9,7 @@ import Suite
 import Cirrus
 import CoreData
 import Journalist
+import CloudKit
 
 public class DataStore: ObservableObject {
 	public static let instance = DataStore()
@@ -49,6 +50,17 @@ public class DataStore: ObservableObject {
 			let date = Date()
 			try await SyncedContainer.instance.sync(all: BehaviorMO.self, predicate: self.lastSyncedPredicate, in: .public)
 			Settings.instance.lastSyncedBehaviorsAt = date
+			await self.checkForShared()
 		}
+	}
+	
+	func checkForShared() async {
+		let privateZones = try! await CKDatabase.private.allZones()
+		print("Private zones: \(privateZones)")
+
+		let sharedZones = try! await CKDatabase.shared.allZones()
+		print("shared zones: \(sharedZones)")
+		
+		print("Done")
 	}
 }
