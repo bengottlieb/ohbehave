@@ -20,8 +20,13 @@ struct PatientDayScreen: View {
 			HStack() {
 				Text("Total for day")
 				Spacer()
-				Text("\(TimeInterval(day.totalEarned(for: .screenTime) * 60).durationString(style: .minutes))")
-					.bold()
+				VStack(alignment: .trailing) {
+					Text("Computer: \(TimeInterval(day.totalEarned(for: .computerTime) * 60).durationString(style: .minutes))")
+						.bold()
+
+					Text("iPad: \(TimeInterval(day.totalEarned(for: .iPadTime) * 60).durationString(style: .minutes))")
+						.bold()
+				}
 			}
 			.padding()
 		}

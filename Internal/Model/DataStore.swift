@@ -33,7 +33,7 @@ public class DataStore: ObservableObject {
 	
 	public func configure() async {
 		await Cirrus.configure(with: configuration)
-//		try? await Cirrus.instance.container.publicCloudDatabase.deleteAll(from: ["behavior"])
+		//try? await Cirrus.instance.container.publicCloudDatabase.deleteAll(from: ["behavior"])
 		await Cirrus.instance.container.privateCloudDatabase.setupSubscriptions([.init()])
 	}
 }

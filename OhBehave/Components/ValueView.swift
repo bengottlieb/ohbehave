@@ -19,7 +19,7 @@ struct ValueView: View {
 		.font(.system(size: 10, weight: .semibold))
 		.padding(.vertical, 4)
 		.padding(.horizontal, 6)
-		.background(Capsule().fill(Color.black.opacity(0.1)))
+		.background(Capsule().fill(behavior.rewardUnit.color.opacity(0.1)))
 	}
 }
 
