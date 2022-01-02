@@ -16,8 +16,8 @@ public class PatientMO: SyncedManagedObject {
 	@NSManaged public var age: Int16
 	@NSManaged public var days: Set<DayMO>
 	
-	override public var database: CKDatabase { .private }
-	
+	open override var defaultDatabase: CKDatabase { .private }
+
 	public var today: DayMO {
 		for day in days {
 			if day.isToday { return day }

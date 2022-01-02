@@ -45,22 +45,25 @@ public class DataStore: ObservableObject {
 		await Cirrus.configure(with: configuration)
 		//try? await Cirrus.instance.container.publicCloudDatabase.deleteAll(from: ["behavior"])
 		await Cirrus.instance.container.privateCloudDatabase.setupSubscriptions([.init()])
+		await Cirrus.instance.container.sharedCloudDatabase.setupSubscriptions([.init()])
 
 		await report {
 			let date = Date()
-			try await SyncedContainer.instance.sync(all: BehaviorMO.self, predicate: self.lastSyncedPredicate, in: .public)
+			try await SyncedContainer.instance.download(all: BehaviorMO.self, predicate: self.lastSyncedPredicate, in: .public)
 			Settings.instance.lastSyncedBehaviorsAt = date
 			await self.checkForShared()
 		}
 	}
 	
 	func checkForShared() async {
-		let privateZones = try! await CKDatabase.private.allZones()
-		print("Private zones: \(privateZones)")
+		if let privateZones = try? await CKDatabase.private.allRecordZones() {
+			print("Private zones: \(privateZones)")
+		}
 
-		let sharedZones = try! await CKDatabase.shared.allZones()
-		print("shared zones: \(sharedZones)")
-		
+		if let sharedZones = try? await CKDatabase.shared.allRecordZones() {
+			print("shared zones: \(sharedZones)")
+		}
+
 		print("Done")
 	}
 }

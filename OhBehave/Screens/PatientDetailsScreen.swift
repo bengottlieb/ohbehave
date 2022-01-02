@@ -19,6 +19,17 @@ struct PatientDetailsScreen: View {
 				Stepper("", value: $patient.age)
 			}
 			Spacer()
+			
+			Button("Delete Patient") {
+				Task {
+					try? await patient.deleteFromCloudKit()
+					patient.deleteFromContext()
+				}
+			}
+			.padding()
+			.padding(.horizontal)
+			.foregroundColor(.white)
+			.background(RoundedRectangle(cornerRadius: 8).fill(Color.red))
 		}
 		.padding()
 		.navigationTitle("Details")

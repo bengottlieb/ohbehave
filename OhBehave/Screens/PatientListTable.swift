@@ -18,7 +18,7 @@ struct PatientListTable: View {
 		ScrollView() {
 			VStack() {
 				ForEach(patients) { patient in
-					NavigationLink(destination: PatientDayScreen(day: patient.today)) {
+					NavigationLink(destination: PatientScreen(patient: patient)) {
 						HStack() {
 							Text(patient.name)
 								.font(.title)

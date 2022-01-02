@@ -23,10 +23,9 @@ public class BehaviorMO: SyncedManagedObject {
 	@NSManaged public var earnedIfCompletedAtString: String?
 	@NSManaged public var earnedUnlessLost: Bool
 	@NSManaged public var earnedMultipleTimes: Bool
-	
 
-	override public var database: CKDatabase { .public }
-	
+	open override var defaultDatabase: CKDatabase { .public }
+
 	public override func awakeFromInsert() {
 		super.awakeFromInsert()
 		stringID = uuid

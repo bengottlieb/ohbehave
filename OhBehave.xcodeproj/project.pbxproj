@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B519C2412778034400DCF362 /* PatientScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B519C2402778034400DCF362 /* PatientScreen.swift */; };
 		B52F9EAB277720C900DC9D9F /* LegacyDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52F9EAA277720C900DC9D9F /* LegacyDelegates.swift */; };
 		B5DB281127735E9B007C8186 /* OhBehaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB281027735E9B007C8186 /* OhBehaveApp.swift */; };
 		B5DB281327735E9B007C8186 /* ContentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB281227735E9B007C8186 /* ContentScreen.swift */; };
@@ -67,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B519C2402778034400DCF362 /* PatientScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientScreen.swift; sourceTree = "<group>"; };
 		B52F9EA92776BE3100DC9D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B52F9EAA277720C900DC9D9F /* LegacyDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyDelegates.swift; sourceTree = "<group>"; };
 		B5DB280D27735E9B007C8186 /* OhBehave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OhBehave.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +206,7 @@
 				B5DB281227735E9B007C8186 /* ContentScreen.swift */,
 				B5DB284927739A61007C8186 /* PatientListScreen.swift */,
 				B5DB284B27739B58007C8186 /* PatientListTable.swift */,
+				B519C2402778034400DCF362 /* PatientScreen.swift */,
 				B5DB284D2773B595007C8186 /* PatientDetailsScreen.swift */,
 				B5DB284F2773B61E007C8186 /* PatientDayScreen.swift */,
 				B5DB286D27751132007C8186 /* Add Behavior */,
@@ -392,6 +395,7 @@
 				B5DB284A27739A61007C8186 /* PatientListScreen.swift in Sources */,
 				B5DB281327735E9B007C8186 /* ContentScreen.swift in Sources */,
 				B52F9EAB277720C900DC9D9F /* LegacyDelegates.swift in Sources */,
+				B519C2412778034400DCF362 /* PatientScreen.swift in Sources */,
 				B5DB28792775DB99007C8186 /* AddBehaviorRow.swift in Sources */,
 				B5DB285A2773FB46007C8186 /* AddBehaviorScreen.swift in Sources */,
 				B5DB284E2773B595007C8186 /* PatientDetailsScreen.swift in Sources */,
@@ -561,6 +565,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OhBehave/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Oh, Behave";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -593,6 +598,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OhBehave/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Oh, Behave";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

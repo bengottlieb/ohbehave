@@ -20,8 +20,8 @@ public class DayMO: SyncedManagedObject {
 	
 	var _loggedBehaviors: [LoggedBehavior]?
 
-	override public var database: CKDatabase { .private }
-	
+	open override var defaultDatabase: CKDatabase { .private }
+
 	public var dayTitle: String {
 		date.formatted(as: "dd MMM")
 	}

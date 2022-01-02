@@ -8,6 +8,7 @@
 import Suite
 import Internal
 import Achtung
+import UIKit
 
 struct AddBehaviorRow: View {
 	let behavior: BehaviorMO
@@ -21,7 +22,10 @@ struct AddBehaviorRow: View {
 	var hasBeenEarned: Bool { !behavior.earnedMultipleTimes && day.has(logged: behavior) }
 	var body: some View {
 		HStack() {
-			Button(action: { selectBehavior(behavior) }) {
+			Button(action: {
+				UIImpactFeedbackGenerator().impactOccurred()
+				selectBehavior(behavior)
+			}) {
 				VStack(alignment: .leading) {
 					HStack() {
 						if behavior.canBeLost {

@@ -71,7 +71,7 @@
 		"kinds": ["study"],
 		"times": [],
 		"title": "Homework",
-		"value": 30,
+		"value": 10,
 		"unit": "computer time"
 	},
 	{
@@ -87,21 +87,21 @@
 		"kinds": ["exercise"],
 		"times": [],
 		"title": "10,000 Steps",
-		"value": 10,
+		"value": 7,
 		"unit": "iPad time"
 	},
 	{
 		"kinds": ["exercise"],
 		"times": [],
 		"title": "Close rings",
-		"value": 10,
+		"value": 7,
 		"unit": "iPad time"
 	},
 	{
 		"kinds": ["exercise"],
 		"times": [],
 		"title": "Physical therapy",
-		"value": 10,
+		"value": 7,
 		"unit": "iPad time"
 	},
 
@@ -111,14 +111,14 @@
 		"times": [],
 		"title": "Fill dishwasher",
 		"description": "After cooking",
-		"value": 5,
+		"value": 3,
 		"unit": "iPad time"
 	},
 	{
 		"kinds": ["chores"],
 		"times": [],
 		"title": "Empty dishwasher",
-		"value": 5,
+		"value": 3,
 		"unit": "iPad time"
 	},
 	{
@@ -126,7 +126,7 @@
 		"times": [],
 		"title": "Do laundry",
 		"description": "Limited to once a day, can’t be done while someone is sleeping and doesn’t count if you didn’t move your own things through the 2 stations and out the machines before someone had to tell you to because it’s been left in there and someone else needs to use this. Includes proper folding and putting away in an organized fashion with same items in the same drawer, getting rid of your own dryer sheet and dryer lint, leaving washing machine open",
-		"value": 5,
+		"value": 3,
 		"unit": "iPad time"
 	},
 	{
@@ -134,7 +134,7 @@
 		"times": [],
 		"title": "Clean up dishes",
 		"description": "Clean up your own dishes and dirty napkin, trash, after each meal, push your chair in, wash hands. If anyone has to remind you about any of these tasks, no reward.",
-		"value": 5,
+		"value": 3,
 		"unit": "computer time"
 	},
 
@@ -149,7 +149,7 @@
 			"minute": 30,
 			"second": 0
 		},
-		"value": 5,
+		"value": 3,
 		"unit": "iPad time",
 		"earnedUnlessLost": true
 	},
@@ -164,7 +164,7 @@
 			"second": 0
 
 		},
-		"value": 5,
+		"value": 3,
 		"unit": "iPad time",
 		"earnedUnlessLost": true
 	},
@@ -179,7 +179,7 @@
 			"second": 0
 
 		},
-		"value": 5,
+		"value": 3,
 		"unit": "iPad time",
 		"earnedUnlessLost": true
 	},
@@ -194,7 +194,7 @@
 			"second": 0
 
 		},
-		"value": 5,
+		"value": 3,
 		"unit": "iPad time",
 		"earnedUnlessLost": true
 	},
@@ -209,7 +209,7 @@
 			"second": 0
 
 		},
-		"value": 5,
+		"value": 3,
 		"unit": "computer time",
 		"earnedUnlessLost": true
 	},
@@ -224,7 +224,7 @@
 			"second": 0
 
 		},
-		"value": 5,
+		"value": 3,
 		"unit": "iPad time",
 		"earnedUnlessLost": true
 	},
@@ -240,8 +240,8 @@
 		"kinds": ["self care"],
 		"times": ["morning", "evening"],
 		"title": "Meditate",
-		"description": "Meditation where people can see you for 5 minutes, must announce that you are doing it and set a timer",
-		"value": 5,
+		"description": "Meditation where people can see you for 2 minutes, must announce that you are doing it and set a timer",
+		"value": 3,
 		"unit": "computer time"
 	},
 	{
@@ -249,7 +249,7 @@
 		"times": ["morning", "evening"],
 		"title": "Stimming",
 		"description": "Stimming in front of mirror for 2 minutes including making throat clearing sounds or hums, running around in circles, bending over, flicking fingers and turning wrists, toe running, or if sitting sticking out legs at odd angles.",
-		"value": 5,
+		"value": 3,
 		"unit": "iPad time"
 	},
 	{
@@ -265,7 +265,7 @@
 		"times": ["evening"],
 		"title": "Go to sleep",
 		"description": "Go to sleep at set time without any complaint delay or argument with lights out and in bed. Do not get up. Do not read when awake at night, simply lie there and try to sleep, no matter how long this takes. Use guided meditation or relaxation.",
-		"value": 15,
+		"value": 7,
 		"unit": "iPad time"
 	},
 
@@ -282,7 +282,7 @@
 		"kinds": ["social"],
 		"times": [],
 		"title": "Read hidden curriculum textbook completely",
-		"value": 15,
+		"value": 7,
 		"unit": "iPad time"
 	},
 	{
@@ -311,7 +311,7 @@
 		"kinds": ["social"],
 		"times": [],
 		"title": "Playing with a sibling for 5 minutes without annoying them",
-		"value": 1,
+		"value": 3,
 		"unit": "computer time",
 		"earnedMultipleTimes": true
 	},
@@ -321,7 +321,7 @@
 		"times": [],
 		"title": "Participate in an outing",
 		"description": "Wear the right footwear\n 0 volume\n 0 sharing of somatic complaints: tired legs, tired of carrying personal items, mosquito bites, pain, uneven or difficult to navigate surfaces, moisture, heat, cold.\n Complaints about boredom\n Putting face with grimace and clenched teeth near other people.\n Mocking.\n Modeling other negative behavior.\n Not showing unexpected behaviors: Asking to end the outing before other family members are ready. Asking repeatedly. Pointing out insisting on flaws in plans, environment, to small siblings to try to get them to become negative about outing and reduce outing time",
-		"value": 15,
+		"value": 7,
 		"unit": "iPad time"
 	},
 	{
@@ -338,7 +338,7 @@
 		"times": [],
 		"title": "Prepare for an outing",
 		"description": "Bring your own water, mask, right footwear, ensure there is a head covering, rain jacket or towel for you without others having to help you. You must turn off any electronic devices at arrival with no “I need to finish”",
-		"value": 5,
+		"value": 3,
 		"unit": "computer time",
 		"earnedMultipleTimes": true
 	},
