@@ -265,7 +265,7 @@
 		"times": ["evening"],
 		"title": "Go to sleep",
 		"description": "Go to sleep at set time without any complaint delay or argument with lights out and in bed. Do not get up. Do not read when awake at night, simply lie there and try to sleep, no matter how long this takes. Use guided meditation or relaxation.",
-		"value": 7,
+		"value": 10,
 		"unit": "iPad time"
 	},
 
@@ -282,7 +282,7 @@
 		"kinds": ["social"],
 		"times": [],
 		"title": "Read hidden curriculum textbook completely",
-		"value": 7,
+		"value": 10,
 		"unit": "iPad time"
 	},
 	{
@@ -321,7 +321,7 @@
 		"times": [],
 		"title": "Participate in an outing",
 		"description": "Wear the right footwear\n 0 volume\n 0 sharing of somatic complaints: tired legs, tired of carrying personal items, mosquito bites, pain, uneven or difficult to navigate surfaces, moisture, heat, cold.\n Complaints about boredom\n Putting face with grimace and clenched teeth near other people.\n Mocking.\n Modeling other negative behavior.\n Not showing unexpected behaviors: Asking to end the outing before other family members are ready. Asking repeatedly. Pointing out insisting on flaws in plans, environment, to small siblings to try to get them to become negative about outing and reduce outing time",
-		"value": 7,
+		"value": 10,
 		"unit": "iPad time"
 	},
 	{
