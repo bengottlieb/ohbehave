@@ -44,6 +44,13 @@ struct PatientListTable: View {
 			ToolbarItem(placement: .navigationBarLeading) {
 				Button(action: addPatient) { Image(.plus).padding() }
 			}
+			ToolbarItem(placement: .navigationBarTrailing) {
+				Menu {
+					Button("Update Behaviors") { DataStore.instance.updateBehaviors() }
+				} label: {
+					Image(.gear).padding()
+				}
+			}
 		}
 	}
 	

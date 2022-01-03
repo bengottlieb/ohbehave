@@ -41,9 +41,16 @@ public class DataStore: ObservableObject {
 		return NSPredicate(value: true)
 	}
 	
+	public func updateBehaviors() {
+		Task {
+			await self.viewContext.perform {
+				BehaviorMO.importDefaults(into: self.viewContext)
+			}
+		}
+	}
+	
 	public func configure() async {
 		await Cirrus.configure(with: configuration)
-		//try? await Cirrus.instance.container.publicCloudDatabase.deleteAll(from: ["behavior"])
 		await Cirrus.instance.container.privateCloudDatabase.setupSubscriptions([.init()])
 		await Cirrus.instance.container.sharedCloudDatabase.setupSubscriptions([.init()])
 
