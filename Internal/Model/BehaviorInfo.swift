@@ -13,6 +13,7 @@ struct BehaviorInfo: Codable, Equatable {
 	var title: String
 	var description: String?
 	var value: Int
+	var ratio: Double?
 	var unit: String
 	var earnedIfCompletedAt: Date.Time?
 	var earnedUnlessLost: Bool?

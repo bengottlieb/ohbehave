@@ -42,66 +42,67 @@
 		"value": 1,
 		"unit": "computer time"
 	},
+	{
+		"kinds": ["hygiene"],
+		"times": ["daily"],
+		"title": "Shower",
+		"value": 1,
+		"unit": "computer time"
+	},
+	{
+		"kinds": ["hygiene"],
+		"times": ["biweekly"],
+		"title": "Clip toenails",
+		"value": 1,
+		"unit": "computer time"
+	},
 
 
 	{
 		"kinds": ["study"],
-		"times": [],
-		"title": "Read one chapter of chemistry",
-		"description": "Take notes and chapter questions",
-		"value": 30,
-		"unit": "computer time"
-	},
-	{
-		"kinds": ["study"],
-		"times": [],
-		"title": "Read one chapter of history",
-		"description": "Take notes and chapter questions",
-		"value": 30,
-		"unit": "computer time"
-	},
-	{
-		"kinds": ["study"],
-		"times": [],
-		"title": "One AMC test",
-		"value": 30,
-		"unit": "computer time"
-	},
-	{
-		"kinds": ["study"],
-		"times": [],
-		"title": "Homework",
+		"times": ["daily"],
+		"title": "Caught up on all homework, pre-quiz studying, required and extra credit assignments",
+		"description": "Take notes",
 		"value": 10,
 		"unit": "computer time"
 	},
 	{
 		"kinds": ["study"],
-		"times": [],
-		"title": "One AMC chapter",
-		"value": 30,
+		"times": ["daily"],
+		"title": "Use planner appropriately.",
+		"description": "Lose 30 if a task is found that's not in the planner",
+		"value": 5,
 		"unit": "computer time"
 	},
-
+	{
+		"kinds": ["study"],
+		"times": [],
+		"title": "Study something, take notes",
+		"description": "Homework doesn’t count. This is additional studying or learning. If you are not taking notes, it doesn’t count.",
+		"value": 0,
+		"ratio": 0.5,
+		"unit": "computer time"
+	},
 
 	{
 		"kinds": ["exercise"],
 		"times": [],
 		"title": "10,000 Steps",
-		"value": 7,
+		"value": 5,
 		"unit": "iPad time"
 	},
 	{
 		"kinds": ["exercise"],
 		"times": [],
 		"title": "Close rings",
-		"value": 7,
+		"value": 5,
 		"unit": "iPad time"
 	},
 	{
 		"kinds": ["exercise"],
 		"times": [],
 		"title": "Physical therapy",
-		"value": 7,
+		"value": 5,
 		"unit": "iPad time"
 	},
 
@@ -126,7 +127,7 @@
 		"times": [],
 		"title": "Do laundry",
 		"description": "Limited to once a day, can’t be done while someone is sleeping and doesn’t count if you didn’t move your own things through the 2 stations and out the machines before someone had to tell you to because it’s been left in there and someone else needs to use this. Includes proper folding and putting away in an organized fashion with same items in the same drawer, getting rid of your own dryer sheet and dryer lint, leaving washing machine open",
-		"value": 3,
+		"value": 5,
 		"unit": "iPad time"
 	},
 	{
@@ -134,7 +135,7 @@
 		"times": [],
 		"title": "Clean up dishes",
 		"description": "Clean up your own dishes and dirty napkin, trash, after each meal, push your chair in, wash hands. If anyone has to remind you about any of these tasks, no reward.",
-		"value": 3,
+		"value": 1,
 		"unit": "computer time"
 	},
 
@@ -149,7 +150,7 @@
 			"minute": 30,
 			"second": 0
 		},
-		"value": 3,
+		"value": 5,
 		"unit": "iPad time",
 		"earnedUnlessLost": true
 	},
@@ -164,7 +165,7 @@
 			"second": 0
 
 		},
-		"value": 3,
+		"value": 1,
 		"unit": "iPad time",
 		"earnedUnlessLost": true
 	},
@@ -179,7 +180,7 @@
 			"second": 0
 
 		},
-		"value": 3,
+		"value": 1,
 		"unit": "iPad time",
 		"earnedUnlessLost": true
 	},
@@ -194,7 +195,7 @@
 			"second": 0
 
 		},
-		"value": 3,
+		"value": 1,
 		"unit": "iPad time",
 		"earnedUnlessLost": true
 	},
@@ -209,7 +210,7 @@
 			"second": 0
 
 		},
-		"value": 3,
+		"value": 1,
 		"unit": "computer time",
 		"earnedUnlessLost": true
 	},
@@ -224,13 +225,13 @@
 			"second": 0
 
 		},
-		"value": 3,
+		"value": 5,
 		"unit": "iPad time",
 		"earnedUnlessLost": true
 	},
 
 	{
-		"kinds": ["hair"],
+		"kinds": ["behavior"],
 		"times": ["evening"],
 		"title": "Plug in all devices",
 		"value": 1,
@@ -238,18 +239,18 @@
 	},
 	{
 		"kinds": ["self care"],
-		"times": ["morning", "evening"],
+		"times": ["daily"],
 		"title": "Meditate",
-		"description": "Meditation where people can see you for 2 minutes, must announce that you are doing it and set a timer",
-		"value": 3,
+		"description": "Meditation where people can see you for 5 minutes, must announce that you are doing it and set a timer",
+		"value": 1,
 		"unit": "computer time"
 	},
 	{
 		"kinds": ["self care"],
-		"times": ["morning", "evening"],
+		"times": ["daily"],
 		"title": "Stimming",
 		"description": "Stimming in front of mirror for 2 minutes including making throat clearing sounds or hums, running around in circles, bending over, flicking fingers and turning wrists, toe running, or if sitting sticking out legs at odd angles.",
-		"value": 3,
+		"value": 1,
 		"unit": "iPad time"
 	},
 	{
@@ -257,7 +258,7 @@
 		"times": ["evening"],
 		"title": "Stimming cessation",
 		"description": "Stimming cessation with mom for 1 minute to 1 hour if mom has time. You have to ask for this",
-		"value": 5,
+		"value": 1,
 		"unit": "iPad time"
 	},
 	{
@@ -265,7 +266,7 @@
 		"times": ["evening"],
 		"title": "Go to sleep",
 		"description": "Go to sleep at set time without any complaint delay or argument with lights out and in bed. Do not get up. Do not read when awake at night, simply lie there and try to sleep, no matter how long this takes. Use guided meditation or relaxation.",
-		"value": 10,
+		"value": 5,
 		"unit": "iPad time"
 	},
 
@@ -282,7 +283,7 @@
 		"kinds": ["social"],
 		"times": [],
 		"title": "Read hidden curriculum textbook completely",
-		"value": 10,
+		"value": 15,
 		"unit": "iPad time"
 	},
 	{
@@ -311,7 +312,7 @@
 		"kinds": ["social"],
 		"times": [],
 		"title": "Playing with a sibling for 5 minutes without annoying them",
-		"value": 3,
+		"value": 1,
 		"unit": "computer time",
 		"earnedMultipleTimes": true
 	},
