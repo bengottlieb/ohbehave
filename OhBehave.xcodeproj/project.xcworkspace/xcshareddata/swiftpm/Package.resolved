@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "achtung",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bengottlieb/achtung",
+      "state" : {
+        "revision" : "88a19530b2272cdf5e26e0ef9b954c9767daa392",
+        "version" : "0.2.6"
+      }
+    },
+    {
+      "identity" : "cirrus",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bengottlieb/cirrus",
+      "state" : {
+        "revision" : "20f676499d4ec527af9390bdb1ac850d79da5133",
+        "version" : "0.0.6"
+      }
+    },
+    {
+      "identity" : "journalist",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bengottlieb/journalist",
+      "state" : {
+        "revision" : "e841bbbe283d6f170e714b5dc217d2772b7db384",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "suite",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bengottlieb/suite",
+      "state" : {
+        "revision" : "967c2e75a5ee4af16717b456278a31bdb33cdc3f",
+        "version" : "1.0.70"
+      }
+    }
+  ],
+  "version" : 2
+}

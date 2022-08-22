@@ -36,7 +36,7 @@ extension DayMO {
 			if let cached = _loggedBehaviors { return cached }
 			guard let data = behaviorData else { return [] }
 			
-			let result = report(note: "Failed to decode behaviors") {
+			let result = report("Failed to decode behaviors") {
 				return try [LoggedBehavior].loadJSON(data: data)
 			}
 			

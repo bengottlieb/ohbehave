@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B519C2412778034400DCF362 /* PatientScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B519C2402778034400DCF362 /* PatientScreen.swift */; };
 		B52F9EAB277720C900DC9D9F /* LegacyDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52F9EAA277720C900DC9D9F /* LegacyDelegates.swift */; };
+		B5CDB4FD28B388DF005E1508 /* Cirrus in Frameworks */ = {isa = PBXBuildFile; productRef = B5CDB4FC28B388DF005E1508 /* Cirrus */; };
 		B5DB281127735E9B007C8186 /* OhBehaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB281027735E9B007C8186 /* OhBehaveApp.swift */; };
 		B5DB281327735E9B007C8186 /* ContentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB281227735E9B007C8186 /* ContentScreen.swift */; };
 		B5DB281527735E9C007C8186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DB281427735E9C007C8186 /* Assets.xcassets */; };
@@ -18,7 +19,6 @@
 		B5DB282A27735F32007C8186 /* Internal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5DB282327735F32007C8186 /* Internal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5DB283127735F42007C8186 /* Suite in Frameworks */ = {isa = PBXBuildFile; productRef = B5DB283027735F42007C8186 /* Suite */; };
 		B5DB28382773602A007C8186 /* PatientMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28372773602A007C8186 /* PatientMO.swift */; };
-		B5DB283C27736048007C8186 /* Cirrus in Frameworks */ = {isa = PBXBuildFile; productRef = B5DB283B27736048007C8186 /* Cirrus */; };
 		B5DB283E27736446007C8186 /* BehaviorMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB283D27736446007C8186 /* BehaviorMO.swift */; };
 		B5DB28402773645C007C8186 /* DayMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB283F2773645C007C8186 /* DayMO.swift */; };
 		B5DB284327736869007C8186 /* OhBehave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5DB284127736869007C8186 /* OhBehave.xcdatamodeld */; };
@@ -39,8 +39,9 @@
 		B5DB286C27750380007C8186 /* DayMO+Behaviors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB286B27750380007C8186 /* DayMO+Behaviors.swift */; };
 		B5DB286F27751D7A007C8186 /* ValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB286E27751D7A007C8186 /* ValueView.swift */; };
 		B5DB287127752535007C8186 /* BehaviorMO+RewardUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB287027752535007C8186 /* BehaviorMO+RewardUnits.swift */; };
-		B5DB28772775DB75007C8186 /* Achtung in Frameworks */ = {isa = PBXBuildFile; productRef = B5DB28762775DB75007C8186 /* Achtung */; };
 		B5DB28792775DB99007C8186 /* AddBehaviorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB28782775DB99007C8186 /* AddBehaviorRow.swift */; };
+		B5E92B4228B3882E00F55B7E /* Journalist in Frameworks */ = {isa = PBXBuildFile; productRef = B5E92B4128B3882E00F55B7E /* Journalist */; };
+		B5E92B4528B3885500F55B7E /* Achtung in Frameworks */ = {isa = PBXBuildFile; productRef = B5E92B4428B3885500F55B7E /* Achtung */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +79,6 @@
 		B5DB281727735E9C007C8186 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5DB282327735F32007C8186 /* Internal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Internal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DB282527735F32007C8186 /* Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Internal.h; sourceTree = "<group>"; };
-		B5DB283327735FAA007C8186 /* Cirrus */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Cirrus; path = ../../Frameworks/Cirrus; sourceTree = "<group>"; };
 		B5DB28372773602A007C8186 /* PatientMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientMO.swift; sourceTree = "<group>"; };
 		B5DB283D27736446007C8186 /* BehaviorMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorMO.swift; sourceTree = "<group>"; };
 		B5DB283F2773645C007C8186 /* DayMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayMO.swift; sourceTree = "<group>"; };
@@ -96,12 +96,10 @@
 		B5DB28572773F796007C8186 /* NSManagedObjectContext+Behave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Behave.swift"; sourceTree = "<group>"; };
 		B5DB28592773FB46007C8186 /* AddBehaviorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBehaviorScreen.swift; sourceTree = "<group>"; };
 		B5DB285F27742423007C8186 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		B5DB28662774FF4B007C8186 /* Journalist */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Journalist; path = ../../Frameworks/Journalist; sourceTree = "<group>"; };
 		B5DB28692775034B007C8186 /* RecordedBehaviorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordedBehaviorListView.swift; sourceTree = "<group>"; };
 		B5DB286B27750380007C8186 /* DayMO+Behaviors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DayMO+Behaviors.swift"; sourceTree = "<group>"; };
 		B5DB286E27751D7A007C8186 /* ValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueView.swift; sourceTree = "<group>"; };
 		B5DB287027752535007C8186 /* BehaviorMO+RewardUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BehaviorMO+RewardUnits.swift"; sourceTree = "<group>"; };
-		B5DB28752775DB61007C8186 /* Achtung */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Achtung; path = ../../Frameworks/Achtung; sourceTree = "<group>"; };
 		B5DB28782775DB99007C8186 /* AddBehaviorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBehaviorRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DB28772775DB75007C8186 /* Achtung in Frameworks */,
 				B5DB282927735F32007C8186 /* Internal.framework in Frameworks */,
 				B5DB284627736EA6007C8186 /* CloudKit.framework in Frameworks */,
 			);
@@ -120,9 +117,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DB283C27736048007C8186 /* Cirrus in Frameworks */,
+				B5CDB4FD28B388DF005E1508 /* Cirrus in Frameworks */,
+				B5E92B4228B3882E00F55B7E /* Journalist in Frameworks */,
 				B5DB283127735F42007C8186 /* Suite in Frameworks */,
 				B5DB28682774FFA6007C8186 /* Journalist in Frameworks */,
+				B5E92B4528B3885500F55B7E /* Achtung in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +131,6 @@
 		B5DB280427735E9B007C8186 = {
 			isa = PBXGroup;
 			children = (
-				B5DB283227735FAA007C8186 /* Packages */,
 				B5DB280F27735E9B007C8186 /* OhBehave */,
 				B5DB282427735F32007C8186 /* Internal */,
 				B5DB280E27735E9B007C8186 /* Products */,
@@ -178,16 +176,6 @@
 				B5DB285F27742423007C8186 /* Settings.swift */,
 			);
 			path = Internal;
-			sourceTree = "<group>";
-		};
-		B5DB283227735FAA007C8186 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				B5DB283327735FAA007C8186 /* Cirrus */,
-				B5DB28662774FF4B007C8186 /* Journalist */,
-				B5DB28752775DB61007C8186 /* Achtung */,
-			);
-			name = Packages;
 			sourceTree = "<group>";
 		};
 		B5DB283427735FC0007C8186 /* Resources */ = {
@@ -296,7 +284,6 @@
 			);
 			name = OhBehave;
 			packageProductDependencies = (
-				B5DB28762775DB75007C8186 /* Achtung */,
 			);
 			productName = OhBehave;
 			productReference = B5DB280D27735E9B007C8186 /* OhBehave.app */;
@@ -318,8 +305,10 @@
 			name = Internal;
 			packageProductDependencies = (
 				B5DB283027735F42007C8186 /* Suite */,
-				B5DB283B27736048007C8186 /* Cirrus */,
 				B5DB28672774FFA6007C8186 /* Journalist */,
+				B5E92B4128B3882E00F55B7E /* Journalist */,
+				B5E92B4428B3885500F55B7E /* Achtung */,
+				B5CDB4FC28B388DF005E1508 /* Cirrus */,
 			);
 			productName = Internal;
 			productReference = B5DB282327735F32007C8186 /* Internal.framework */;
@@ -355,6 +344,9 @@
 			mainGroup = B5DB280427735E9B007C8186;
 			packageReferences = (
 				B5DB282F27735F42007C8186 /* XCRemoteSwiftPackageReference "suite" */,
+				B5E92B3D28B387DC00F55B7E /* XCRemoteSwiftPackageReference "cirrus" */,
+				B5E92B4028B3882E00F55B7E /* XCRemoteSwiftPackageReference "journalist" */,
+				B5E92B4328B3885500F55B7E /* XCRemoteSwiftPackageReference "achtung" */,
 			);
 			productRefGroup = B5DB280E27735E9B007C8186 /* Products */;
 			projectDirPath = "";
@@ -723,24 +715,55 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		B5E92B3D28B387DC00F55B7E /* XCRemoteSwiftPackageReference "cirrus" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bengottlieb/cirrus";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
+		B5E92B4028B3882E00F55B7E /* XCRemoteSwiftPackageReference "journalist" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bengottlieb/journalist";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B5E92B4328B3885500F55B7E /* XCRemoteSwiftPackageReference "achtung" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bengottlieb/achtung";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B5CDB4FC28B388DF005E1508 /* Cirrus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5E92B3D28B387DC00F55B7E /* XCRemoteSwiftPackageReference "cirrus" */;
+			productName = Cirrus;
+		};
 		B5DB283027735F42007C8186 /* Suite */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B5DB282F27735F42007C8186 /* XCRemoteSwiftPackageReference "suite" */;
 			productName = Suite;
 		};
-		B5DB283B27736048007C8186 /* Cirrus */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Cirrus;
-		};
 		B5DB28672774FFA6007C8186 /* Journalist */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Journalist;
 		};
-		B5DB28762775DB75007C8186 /* Achtung */ = {
+		B5E92B4128B3882E00F55B7E /* Journalist */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = B5E92B4028B3882E00F55B7E /* XCRemoteSwiftPackageReference "journalist" */;
+			productName = Journalist;
+		};
+		B5E92B4428B3885500F55B7E /* Achtung */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5E92B4328B3885500F55B7E /* XCRemoteSwiftPackageReference "achtung" */;
 			productName = Achtung;
 		};
 /* End XCSwiftPackageProductDependency section */
